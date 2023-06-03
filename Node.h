@@ -10,7 +10,7 @@ public:
 	int c;
 	Node* next;
 	Node* prev;
-	Node(int);
+	Node(int, int, int);
 	~Node();
 	void print();
 };

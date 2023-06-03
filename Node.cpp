@@ -1,16 +1,18 @@
 #include "Node.h"
 
 
-Node::Node(int val = 0)
+Node::Node(int f_=0, int c_ = 0, int val = 0)
 {
+	this->f = f_;
+	this->c = c_;
 	this->data = val;
 	this->next = NULL;
 	this->prev = NULL;
 };
 
-Node::~Node(){}
+Node::~Node() {}
 
 void Node::print()
 {
-	std::cout << this->data << ','<<' ';
+	std::cout << '('<<f<<','<<c<<',' << this->data << ',' <<") ,";
 }
